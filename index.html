@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Мой список дел</h1>
+        </header>
+        
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Введите новую задачу...">
+            <button onclick="addTask()">Добавить</button>
+        </div>
+        
+        <ol id="taskList">
+            <!-- Задачи будут добавляться здесь -->
+        </ol>
+        
+        <div class="stats">
+            <button class="clear-btn" onclick="clearCompleted()">Очистить все</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
